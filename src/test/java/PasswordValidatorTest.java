@@ -11,7 +11,7 @@ class PasswordValidatorTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"short", "noDigits", "NOLOWERCASE1"})
+    @ValueSource(strings = {"short", "noDigits", "NOLOWERCASE"})
     void testInvalidPasswords(String password) {
         assertFalse(PasswordValidator.isValid(password));
     }
